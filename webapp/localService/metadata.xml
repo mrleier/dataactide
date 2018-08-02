@@ -1,0 +1,11 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+			xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm"
+			Namespace="dataActResults.Results">
+			<EntityType Name="RESULTSType">
+				<Key><PropertyRef Name="PIID"/></Key><Property Name="PIID" Type="Edm.String" Nullable="false" MaxLength="13"/><Property Name="GFMS_NAICS" Type="Edm.String" MaxLength="12"/><Property Name="AWARDMODIFICATIONAMENDMENTNUMB" Type="Edm.Decimal" Precision="4" Scale="1"/><Property Name="FPDS_NAICS" Type="Edm.Decimal" Precision="9" Scale="1"/><Property Name="NAICS_ERROR" Type="Edm.Decimal" Precision="4" Scale="1"/><Property Name="TYP_OF_AWRD_ERROR" Type="Edm.Decimal" Precision="4" Scale="1"/><Property Name="ADDR_ZPCD_ERROR" Type="Edm.Decimal" Precision="4" Scale="1"/><Property Name="ADDR_CTRY_ERROR" Type="Edm.Decimal" Precision="4" Scale="1"/><Property Name="DT_SGND_ERROR" Type="Edm.Decimal" Precision="4" Scale="1"/><Property Name="DUNS_NUM_ERROR" Type="Edm.Decimal" Precision="4" Scale="1"/><Property Name="EFCT_DT_ERROR" Type="Edm.Decimal" Precision="4" Scale="1"/><Property Name="FED_ACTN_OBLIG_ERROR" Type="Edm.Decimal" Precision="4" Scale="1"/><Property Name="Dummy" Type="Edm.Decimal" Precision="18" Scale="0"/></EntityType>
+			<EntityContainer Name="Results" m:IsDefaultEntityContainer="true"><EntitySet Name="RESULTS" EntityType="dataActResults.Results.RESULTSType"/></EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
